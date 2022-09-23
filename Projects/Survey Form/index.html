@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us !</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Name <input id="name" placeholder="Enter your name "name="name" type="text" required/></label>
+          <label id="email-label">Email <input id="email" placeholder="Enter your Email "name="email" type="email" required/></label>
+          <label id="number-label"> Age <input id="number" placeholder="Age" type="number" name="age" min="13" max="120" /></label>
+         <label>Which option best describes your current role?
+           <select id="dropdown">
+             <option value="">Select your current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Tob</option>
+            <option value="3">Part Time Learner</option>
+            <option value="4">Preffer not to say</option>
+            <option value="5">Other</option>
+             </select>
+         </label>
+   <label>What is your favorite Social Media Platform </label>
+     <label >
+       <input 
+       id="facebook" 
+       type="radio" 
+       name="social-media"
+       value="facebook"
+       class="input-radio"
+       checked 
+       />Facebook
+       </label>
+     <label >
+       <input
+       id="instagram" 
+       type="radio" 
+       name="social-media"
+       value="instagram
+       class="input-radio" 
+       />Instagram
+      </label>
+     <label>
+       <input
+       id="twitter" 
+       type="radio"
+       name="social-media"
+       value="twitter"
+       class="input-radio"
+       />Twitter
+      </label>
+     <label>
+       <input 
+       id="whatsapp"
+       type="radio"
+       name="social-media"
+       value="whatsapp"
+       class="input-radio"
+       />Whatsapp
+      </label>
+     <label >
+       <input id="other"
+       type="radio"
+       name="social-media"
+       value="other"
+       class="input-radio"
+       />Other
+      </label>
+      <div class="form-group">
+          <p>
+            How would you like to be as a Developer?
+            <span class="clue">(Check all that apply)</span>
+          </p>
 
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Front-end Projects</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-end Projects</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />Data Visualization</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Challenges</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Open Source Community</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="gitter-help-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />Gitter help rooms</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Videos</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="city-meetups"
+              type="checkbox"
+              class="input-checkbox"
+            />City Meetups</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="wiki"
+              type="checkbox"
+              class="input-checkbox"
+            />Wiki</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="forum"
+              type="checkbox"
+              class="input-checkbox"
+            />Forum</label>
+          <label
+            ><input
+              name="prefer"
+              value="additional-courses"
+              type="checkbox"
+              class="input-checkbox"
+            />Additional Courses</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+     </fieldset>
+        </form>
+      </body>
+</html>
